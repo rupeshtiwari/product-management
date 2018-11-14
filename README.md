@@ -1,7 +1,15 @@
 # Working with Angular Ngrx Project
 
-This is an autonomous component for angular project with ngrx.
-Below are the useful scripts and usages.
+This is an example to show how state management can be done using `ngrx` in angular project.
+
+## How to get Source Code
+
+In order to get started please execute below script on your local box.
+
+    git clone https://github.com/roopkt/product-management.git
+    cd product-management
+    npm i
+    npm start
 
 ## Working in example-app
 
