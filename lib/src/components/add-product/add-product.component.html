@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>Add Product Form</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="form" class="example-container">
+            <mat-form-field>
+                <input matInput type="text" name="prodName" id="prodName" placeholder="Enter product name..." formControlName="name">
+            </mat-form-field>
+
+            <mat-error *ngIf="!isNameValid && form.controls['name'].touched">
+                Name is required (min length 3)
+            </mat-error>
+
+            <mat-form-field>
+                <input matInput type="number" name="prodPrice" id="prodPrice" placeholder="Enter product price..." formControlName="price">
+            </mat-form-field>
+            <mat-error *ngIf="!isPriceValid && form.controls['price'].touched">
+                Price is required (min 1)
+            </mat-error>
+
+            <button mat-raised-button color="accent" (click)="addProductClick($event)" [disabled]="isFormInValid">Add Product</button>
+
+        </form>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,15 @@
+node_modules
+dist
+**/*.js.map
+**/*.d.ts
+tool/node_modules
+reports
+public
+coverage
+testresults
+@types
+temp
+*.log
+*-log
+
+

@@ -1,0 +1,50 @@
+<testsuites name="lib tests" tests="19" failures="0" time="18.687">
+  <testsuite name="Add Product Component" errors="0" failures="0" skipped="0" timestamp="2018-03-27T18:10:17" time="5.923" tests="3">
+    <testcase classname="Add Product Component should have a defined component" name="Add Product Component should have a defined component" time="1.312">
+    </testcase>
+    <testcase classname="Add Product Component should emit addProduct Event on click" name="Add Product Component should emit addProduct Event on click" time="1.052">
+    </testcase>
+    <testcase classname="Add Product Component isFormInValid" name="Add Product Component isFormInValid" time="0.89">
+    </testcase>
+  </testsuite>
+  <testsuite name="Add Product Component" errors="0" failures="0" skipped="0" timestamp="2018-03-27T18:10:23" time="1.977" tests="1">
+    <testcase classname="Add Product Component should have a defined component" name="Add Product Component should have a defined component" time="0.919">
+    </testcase>
+  </testsuite>
+  <testsuite name="Add Product Container" errors="0" failures="0" skipped="0" timestamp="2018-03-27T18:10:17" time="8.787" tests="6">
+    <testcase classname="Add Product Container should have a defined component" name="Add Product Container should have a defined component" time="1.553">
+    </testcase>
+    <testcase classname="Add Product Container should dispatch a products.Load on init" name="Add Product Container should dispatch a products.Load on init" time="0.964">
+    </testcase>
+    <testcase classname="Add Product Container form value should update from form changes" name="Add Product Container form value should update from form changes" time="0.878">
+    </testcase>
+    <testcase classname="Add Product Container ValidateForm VALIDATE_FORM action is dispatched on form change" name="Add Product Container ValidateForm VALIDATE_FORM action is dispatched on form change" time="0.777">
+    </testcase>
+    <testcase classname="Add Product Container ValidateForm AddProduct ADD_PRODUCT action is dispatched on button click" name="Add Product Container ValidateForm AddProduct ADD_PRODUCT action is dispatched on button click" time="0.725">
+    </testcase>
+    <testcase classname="Add Product Container ValidateForm update form$ will patch the form" name="Add Product Container ValidateForm update form$ will patch the form" time="0.773">
+    </testcase>
+  </testsuite>
+  <testsuite name="Effect Tests" errors="0" failures="0" skipped="0" timestamp="2018-03-27T18:10:25" time="1.257" tests="2">
+    <testcase classname="Effect Tests addProduct$ should return a AddProductSuccess action on success" name="Effect Tests addProduct$ should return a AddProductSuccess action on success" time="0.031">
+    </testcase>
+    <testcase classname="Effect Tests addProduct$ should return a AddError action on error" name="Effect Tests addProduct$ should return a AddError action on error" time="0.021">
+    </testcase>
+  </testsuite>
+  <testsuite name="CenterDetail" errors="0" failures="0" skipped="0" timestamp="2018-03-27T18:10:26" time="0.743" tests="7">
+    <testcase classname="CenterDetail Action undefined action should return the default state" name="CenterDetail Action undefined action should return the default state" time="0.004">
+    </testcase>
+    <testcase classname="CenterDetail Action ADD Should return the state with loading true" name="CenterDetail Action ADD Should return the state with loading true" time="0.001">
+    </testcase>
+    <testcase classname="CenterDetail Action ADD_SUCCESS Should return the state with loading false" name="CenterDetail Action ADD_SUCCESS Should return the state with loading false" time="0.001">
+    </testcase>
+    <testcase classname="CenterDetail Action ADD_ERROR Should return the state with loading false" name="CenterDetail Action ADD_ERROR Should return the state with loading false" time="0.001">
+    </testcase>
+    <testcase classname="CenterDetail Query isLoading should return loading status" name="CenterDetail Query isLoading should return loading status" time="0.001">
+    </testcase>
+    <testcase classname="CenterDetail Query isFormValid should return false" name="CenterDetail Query isFormValid should return false" time="0.001">
+    </testcase>
+    <testcase classname="CenterDetail Query isFormValid should return true" name="CenterDetail Query isFormValid should return true" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

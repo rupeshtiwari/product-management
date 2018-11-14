@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "outDir": "../out-tsc/app",
+    "target": "es5",
+    "module": "es2015",
+    "types": [],
+    "baseUrl": ".",
+    "rootDir": "../",  
+    "strict": false,
+    "paths": {}
+  },
+  "files": [
+    "test.ts",
+    "main.ts",
+    "polyfills.ts"
+  ],
+  "exclude": [
+    "../node_modules",
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ],
+  "include": [
+    "./test.ts",
+    "../../lib/**/*",
+    "**/*"
+  ]
+}

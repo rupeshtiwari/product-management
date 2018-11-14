@@ -1,0 +1,9 @@
+﻿#This file will ignore below directories or files from TFS
+
+#ignore below directories
+\node_modules
+\dist
+\coverage
+
+
+

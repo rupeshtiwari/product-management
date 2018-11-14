@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "outDir": "../out-tsc/app",
+    "target": "es5",
+    "module": "commonjs",
+    "baseUrl": "",
+    "rootDir": "./",
+    "strict": false,
+    "paths": {
+      "@scci-branding/product-management": [
+        "./lib/src"
+      ],
+      "@scci-branding/rootstate" :["./rootstate/state"]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "strictNullChecks": false
+
+  },
+
+  "exclude": [
+    "./node_modules",
+    "**/*.spec.ts",
+    "**/*.d.ts",
+    "**/*/node_modules"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

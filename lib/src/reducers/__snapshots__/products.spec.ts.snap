@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CenterDetail Action ADD Should return the state with loading true 1`] = `
+Object {
+  "addProductForm": null,
+  "entities": Object {
+    "2": Object {
+      "id": "2",
+      "name": "Apple",
+      "price": 0,
+    },
+  },
+  "ids": Array [
+    "2",
+  ],
+  "loading": true,
+}
+`;
+
+exports[`CenterDetail Action ADD_ERROR Should return the state with loading false 1`] = `
+Object {
+  "addProductForm": null,
+  "entities": Object {
+    "2": Object {
+      "id": "2",
+      "name": "Apple",
+      "price": 0,
+    },
+  },
+  "ids": Array [
+    "2",
+  ],
+  "loading": false,
+}
+`;
+
+exports[`CenterDetail Action ADD_SUCCESS Should return the state with loading false 1`] = `
+Object {
+  "addProductForm": null,
+  "entities": Object {
+    "2": Object {
+      "id": "2",
+      "name": "Apple",
+      "price": 0,
+    },
+  },
+  "ids": Array [
+    "2",
+  ],
+  "loading": false,
+}
+`;
+
+exports[`CenterDetail Action undefined action should return the default state 1`] = `
+Object {
+  "addProductForm": Object {},
+  "entities": Object {},
+  "ids": Array [],
+  "loading": false,
+}
+`;
+
+exports[`CenterDetail Query isFormValid should return false 1`] = `false`;
+
+exports[`CenterDetail Query isFormValid should return true 1`] = `false`;
+
+exports[`CenterDetail Query isLoading should return loading status 1`] = `false`;

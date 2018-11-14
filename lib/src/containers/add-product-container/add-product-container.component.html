@@ -1,0 +1,9 @@
+<pm-add-product (addProduct)="addProduct($event)"
+[form] ="form"
+[isPriceValid] = "isPriceValid$|async"
+[isNameValid] = "isNameValid$|async"
+[isFormValid]="isFormValid$|async">
+</pm-add-product>
+<mat-spinner *ngIf="loading$|async"></mat-spinner>
+<br>
+<pm-all-products [products]="products$|async"></pm-all-products>

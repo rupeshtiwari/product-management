@@ -1,0 +1,128 @@
+{
+  "name": "@scci-branding/product-management-app",
+  "version": "1.0.0-1",
+  "author": "branding",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start":"npm run example:start",
+    "build": "ng-packagr -p \"lib/ng-package.json\"",
+    "test": "jest --ci --testResultsProcessor=jest-junit",
+    "ci": "npm run test && npm run build",
+    "pretty": "prettier --parser typescript --single-quote --trailing-comma es5 --write \"**/*.ts\"",
+    "example:start": "run-p example:start:launch watch:db",
+    "example:start:launch": "ng serve -p 4322 -o",
+    "example:test": "jest --watchAll --config=example-app/jest.config.json",
+    "example:test:chrome": "ng test -w",
+    "lib:link": "ng-packagr -p \"lib/ng-package.json\" && cd lib/dist && npm link",
+    "lib:test": "jest --watchAll",
+    "lib:test:sr": "jest",
+    "lib:test:chrome": "ng test --app=lib -w",
+    "watch:db": "json-server -w db.json --port 4010",
+    "lint": "tslint -t stylish --project \"tsconfig.json\""
+  },
+  "jest": {
+    "collectCoverage": true,
+    "setupTestFrameworkScriptFile": "<rootDir>/setup-jest.ts",
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "lib/tsconfig.spec.json"
+      },
+      "__TRANSFORM_HTML__": true
+    },
+    "transform": {
+      ".+\\.(ts|js|html)$": "<rootDir>/node_modules/jest-preset-angular/preprocessor.js"
+    },
+    "testMatch": [
+      "<rootDir>/lib/src/**/*.spec.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "html",
+      "json"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "index.ts"
+    ],
+    "modulePathIgnorePatterns": [
+      "dist"
+    ],
+    "testResultsProcessor": "jest-junit"
+  },
+  "jest-junit": {
+    "suiteName": "lib tests",
+    "output": "./TESTS-junit.xml"
+  },
+  "engines": {
+    "node": ">=8.6.0",
+    "npm": ">=5.3.0",
+    "yarn": ">=1.3.0 <2.0.0"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "5.2.0",
+    "@angular/cdk": "5.2.0",
+    "@angular/common": "5.2.0",
+    "@angular/compiler": "5.2.0",
+    "@angular/core": "5.2.0",
+    "@angular/forms": "5.2.0",
+    "@angular/http": "5.2.0",
+    "@angular/material": "5.2.0",
+    "@angular/platform-browser": "5.2.0",
+    "@angular/platform-browser-dynamic": "5.2.0",
+    "@angular/router": "5.2.0",
+    "@ngrx/effects": "5.0.1",
+    "@ngrx/entity": "5.0.1",
+    "@ngrx/router-store": "5.0.1",
+    "@ngrx/store": "5.0.0",
+    "@ngrx/store-devtools": "5.0.1",
+    "@scci-branding/rootstate": "1.0.0-40084",
+    "classlist.js": "1.1.20150312",
+    "core-js": "2.4.1",
+    "hammerjs": "2.0.8",
+    "jasmine-marbles": "0.2.0",
+    "jquery": "3.3.1",
+    "json-server": "^0.12.1",
+    "lodash": "4.17.5",
+    "npm-run-all": "4.1.2",
+    "rxjs": "5.5.6",
+    "web-animations-js": "2.3.1",
+    "zone.js": "0.8.19"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.6.6",
+    "@angular/compiler-cli": "5.2.0",
+    "@angular/language-service": "5.2.0",
+    "@angular/platform-server": "5.2.0",
+    "@types/jasmine": "^2.8.3",
+    "@types/jasminewd2": "^2.0.2",
+    "@types/jest": "20.0.4",
+    "@types/jquery": "3.3.0",
+    "@types/lodash": "4.14.102",
+    "@types/node": "9.3.0",
+    "codelyzer": "4.0.1",
+    "jasmine-core": "2.8.0",
+    "jasmine-node": "1.14.5",
+    "jasmine-spec-reporter": "4.2.1",
+    "jest": "20.0.4",
+    "jest-junit": "3.6.0",
+    "jest-preset-angular": "5.1.0",
+    "jest-zone-patch": "0.0.8",
+    "karma": "2.0.0",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-cli": "1.0.1",
+    "karma-coverage-istanbul-reporter": "1.2.1",
+    "karma-jasmine": "1.1.0",
+    "karma-jasmine-html-reporter": "0.2.2",
+    "karma-junit-reporter": "1.2.0",
+    "ng-packagr": "2.2.0",
+    "ngrx-store-freeze": "0.2.0",
+    "prettier": "1.10.2",
+    "protractor": "5.1.2",
+    "ts-node": "3.3.0",
+    "tslint": "5.9.1",
+    "typescript": "2.4.2"
+  }
+}
