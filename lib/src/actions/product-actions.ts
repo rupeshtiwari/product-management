@@ -2,12 +2,12 @@ import { Action } from '@ngrx/store';
 import { Product } from '../models/product';
 
 export enum ProductActionTypes {
-  ADD = '[@scci-branding/product-management][Products] Add',
-  ADD_SUCCESS = '[@scci-branding/product-management][Products] Add Success',
-  ADD_ERROR = '[@scci-branding/product-management][Products] Add Error',
-  VALIDATE_ADD_PRODUCT_FORM = '[@scci-branding/product-management][Products] Validate Form',
-  LOAD = '[@scci-branding/product-management][Products] Load',
-  LOAD_SUCCESS = '[@scci-branding/product-management][Products] Load Success',
+  ADD = '[@co-branding/product-management][Products] Add',
+  ADD_SUCCESS = '[@co-branding/product-management][Products] Add Success',
+  ADD_ERROR = '[@co-branding/product-management][Products] Add Error',
+  VALIDATE_ADD_PRODUCT_FORM = '[@co-branding/product-management][Products] Validate Form',
+  LOAD = '[@co-branding/product-management][Products] Load',
+  LOAD_SUCCESS = '[@co-branding/product-management][Products] Load Success',
 }
 
 export class Add implements Action {

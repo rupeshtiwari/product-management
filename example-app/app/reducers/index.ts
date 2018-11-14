@@ -8,7 +8,7 @@ import {
 import { environment } from '../../environments/environment';
 import { RouterStateUrl } from '../shared/utils';
 import * as fromRouter from '@ngrx/router-store';
-import { State as RootState } from '@scci-branding/rootstate';
+import { State as RootState } from '@co-branding/rootstate';
 /**
  * storeFreeze prevents state from being mutated. When mutation occurs, an
  * exception will be thrown. This is useful during development mode to

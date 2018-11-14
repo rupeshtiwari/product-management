@@ -17,10 +17,10 @@
     "baseUrl": ".",
     "rootDir": "../",
     "paths": {
-      "@scci-branding/product-management": [
+      "@co-branding/product-management": [
         "../lib/src"
       ],
-      "@scci-branding/rootstate": [
+      "@co-branding/rootstate": [
         "../rootstate/state"
       ]
     }

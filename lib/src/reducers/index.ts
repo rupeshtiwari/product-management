@@ -1,4 +1,4 @@
-import { State as RootState } from '@scci-branding/rootstate';
+import { State as RootState } from '@co-branding/rootstate';
 
 import { reducer as productReducer } from './products';
 import { ProductsState } from './selectors';

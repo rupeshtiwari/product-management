@@ -18,10 +18,10 @@
     "rootDir": "./",
     "strict": false,
     "paths": {
-      "@scci-branding/product-management": [
+      "@co-branding/product-management": [
         "./lib/src"
       ],
-      "@scci-branding/rootstate" :["./rootstate/state"]
+      "@co-branding/rootstate" :["./rootstate/state"]
     },
     "typeRoots": [
       "node_modules/@types"

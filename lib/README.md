@@ -1,2 +1,2 @@
-@scci-branding/product-management
+@co-branding/product-management
 ==================

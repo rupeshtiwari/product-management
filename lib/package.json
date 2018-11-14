@@ -1,5 +1,5 @@
 {
-  "name": "@scci-branding/product-management",
+  "name": "@co-branding/product-management",
   "version": "1.0.0",
   "description": "add product feature",
   "license": "MIT",
@@ -18,7 +18,6 @@
     "@angular/platform-browser": "5.2.0",
     "@angular/platform-browser-dynamic": "5.2.0",
     "@angular/router": "5.2.0",
-    "@scci-branding/rootstate": "^1.0.0-40084",
     "core-js": "2.4.1",
     "rxjs": "5.5.6",
     "zone.js": "0.8.19",

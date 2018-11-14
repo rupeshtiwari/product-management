@@ -1,5 +1,5 @@
 {
-  "name": "@scci-branding/product-management-app",
+  "name": "@co-branding/product-management-app",
   "version": "1.0.0-1",
   "author": "branding",
   "license": "MIT",
@@ -78,7 +78,7 @@
     "@ngrx/router-store": "5.0.1",
     "@ngrx/store": "5.0.0",
     "@ngrx/store-devtools": "5.0.1",
-    "@scci-branding/rootstate": "1.0.0-40084",
+    "@co-branding/rootstate": "1.0.0-40084",
     "classlist.js": "1.1.20150312",
     "core-js": "2.4.1",
     "hammerjs": "2.0.8",

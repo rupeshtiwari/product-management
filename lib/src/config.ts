@@ -6,10 +6,10 @@ export class FeatureModuleConfig {
 
 export const FEATURE_MODULE_CONFIG = new InjectionToken<
   FeatureModuleConfig
->('@scci-branding/product-management Config');
+>('@co-branding/product-management Config');
 
 export const INITIAL_OPTIONS = new InjectionToken<FeatureModuleConfig>(
-  '@scci-branding/product-management Initial Options'
+  '@co-branding/product-management Initial Options'
 );
 
 export function createConfig(

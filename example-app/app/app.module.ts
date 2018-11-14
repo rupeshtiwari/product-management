@@ -9,7 +9,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { FeatureModule } from '@scci-branding/product-management';
+import { FeatureModule } from '@co-branding/product-management';
 
 import { environment } from '../environments/environment';
 import { AppComponent } from './core/containers/app.component';

@@ -4,6 +4,16 @@
       "name": "apple",
       "price": 12,
       "id": "f7b292e2-8c27-4edc-bf76-bf27c31f402a"
+    },
+    {
+      "name": "orange",
+      "price": 23,
+      "id": "e8463d8c-e033-4078-95fe-50898703a88a"
+    },
+    {
+      "name": "mango",
+      "price": 54,
+      "id": "df00db6a-8028-413f-9900-bdec06bc6e6b"
     }
   ]
 }
